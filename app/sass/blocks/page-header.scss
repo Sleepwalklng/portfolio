@@ -1,0 +1,69 @@
+.page-header {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+.page-header::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  opacity: .3;
+  animation: anim 15s linear infinite;
+}
+@keyframes anim {
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.header-start{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.header-start h1{
+  color: #ff7979;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.header-start p{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.header-start a{
+  display: inline-block;
+  text-decoration: none;
+  color: #ff7979;
+  border: 2px solid #ff7979;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: 0.4s linear;
+}
+.header-start a:hover{
+  color: #fff;
+  background: #ff7979;
+}
+.round {
+  width: 100px; 
+  border-radius: 50%; 
+  box-shadow: 0 0 7px #666;
+  margin-bottom: 10px;
+ }

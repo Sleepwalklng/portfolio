@@ -1,0 +1,27 @@
+body {
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+}
+#back-top {
+  position: fixed;
+  bottom: 0px;
+  padding: 0px;
+  left: 90%;  
+  z-index: 10;
+}
+#back-top a {
+  width: 77px;
+  height: 70px;
+  display: block;
+  text-decoration: none;
+  transition: all linear 0.2s;
+  text-align: center;
+}
+.back-top.hidden {
+  display: none;
+}

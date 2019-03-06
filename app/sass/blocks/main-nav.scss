@@ -1,0 +1,113 @@
+.main-nav {
+  position: relative;
+  z-index: 3;
+}
+.main-nav ul {
+  position: fixed;
+  width: 90%;
+  max-width: 400px;
+  right: 5%;
+  top: 5%;
+  border-radius: 0.25em;
+  background: rgba(3, 13, 24, 0.96);
+  visibility: hidden;
+  z-index: 1;
+  backface-visibility: hidden;
+  transform: scale(0);
+  transform-origin: 100% 100%;
+  transition: transform 0.3s, visibility 0s 0.3s;
+}
+.main-nav ul.is-visible {
+  visibility: visible;
+  transform: scale(1);
+  transition: transform 0.3s, visibility 0s 0s;
+}
+.main-nav li a {
+  display: block;
+  padding: 1.6em;
+  border-bottom: 1px solid #092645;
+  color: #f0eee1;
+}
+.main-nav li:last-child a {
+  border-bottom: none;
+}
+@media only screen and (min-width: 1170px) {
+  .main-nav {
+    z-index: 5;
+    height: 50px;
+    background-color: rgba(3, 13, 24, 0.96);
+    transition: height 0.3s;
+  }
+  .main-nav nav, .main-nav ul, .main-nav li, .main-nav a {
+    height: 100%;
+  }
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: auto;
+    max-width: 100%;
+    visibility: visible;
+    transform: scale(1);
+    text-align: center;
+    background-color: transparent;
+  }
+  .main-nav li a {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    display: block;
+    padding: 17px 20px 0 20px;
+    border-bottom: none;
+    transition: padding 0.2s;
+  }
+  .main-nav li a b {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: rgba(240, 238, 225, 0.3);
+  }
+  .main-nav li a:hover b, .main-nav li a.active b {
+    color: #f0eee1;
+  }
+  .main-nav.is-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+.main-nav__toggle {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 44px;
+  height: 44px;
+  background: rgba(3, 13, 24, 0.96);
+  border-radius: 0.25em;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  z-index: 2;
+}
+.main-nav__toggle span {
+  position: absolute;
+  display: block;
+}
+.main-nav__toggle span::before {
+  content: url('../img/dots.svg');
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 100%;
+  height: 100%;
+}
+.main-nav__toggle.menu-is-open span::before {
+  content: url('../img/close.svg');
+}
+@media only screen and (min-width: 1170px) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

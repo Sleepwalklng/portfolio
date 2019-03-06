@@ -1,0 +1,55 @@
+.cd-section {
+  padding-top: 35px;
+  }
+@media only screen and (min-width: 1170px) {
+  .cd-section {
+  padding-top: 65px;
+  }
+  .cd-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    }
+}
+.line {
+  display: block;
+ margin: 30px auto;
+ border-color: #F05F40;
+ border-width: 3px;
+ height: 0;
+ max-width: 50px;
+ box-sizing: border-box;
+ margin-bottom: 40px;
+}
+
+.myworks {
+  width: auto;
+}
+.myworks__list {
+  width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.myworks__item {
+  margin-bottom: 60px;
+}
+.myworks__item--barbershop {
+  position:relative;   
+}
+.item-box {
+  position:absolute;
+ background-color: black;
+  opacity: 0.9;
+  left:0;
+  bottom:0;
+  right:0;
+  top:0;
+  background:rgba(255,255,255, 0.7);
+  padding:5px;
+  display:none;
+}
+.myworks__item--barbershop:hover .item-box {
+  display:block;
+}
