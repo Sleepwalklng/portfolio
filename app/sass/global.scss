@@ -1,17 +1,24 @@
 body {
   font-family: "montserrat",sans-serif;
   box-sizing: border-box;
+  font: initial;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 .container {
   min-width: 320px;
   margin: 0 auto;
 }
-#back-top {
+.back-top {
+  display: none;
+}
+@media only screen and (min-width: 1170px) {
+  #back-top {
   position: fixed;
-  bottom: 0px;
-  padding: 0px;
-  left: 90%;  
+  right: 2%;
+  bottom: 2%;
   z-index: 10;
 }
 #back-top a {
@@ -24,4 +31,5 @@ body {
 }
 .back-top.hidden {
   display: none;
+}
 }

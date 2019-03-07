@@ -67,7 +67,7 @@ $(function() {
 
 var $win = $(window),
     $fixed = $(".back-top"),
-    limit = 200;
+    limit = 500;
 function tgl (state) {
     $fixed.toggleClass("hidden", state);
 }

@@ -1,55 +1,122 @@
 .cd-section {
   padding-top: 35px;
-  }
+}
+.cd-section h2 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #030d18;
+}
 @media only screen and (min-width: 1170px) {
   .cd-section {
   padding-top: 65px;
   }
   .cd-section h2 {
     font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    }
+  }
 }
-.line {
-  display: block;
- margin: 30px auto;
- border-color: #F05F40;
- border-width: 3px;
- height: 0;
- max-width: 50px;
- box-sizing: border-box;
- margin-bottom: 40px;
+.section__line {
+    display: block;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-image: url('../img/coding.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 .myworks {
-  width: auto;
+  background-color:  rgba(3, 13, 24, 0.1);
 }
 .myworks__list {
-  width: 1150px;
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myworks__item {
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 1170px) {
+.myworks__list {
+  width: 1100px;
+  margin: 0 auto;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .myworks__item {
   margin-bottom: 60px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  width: 500px;
+  height: 269px;
+}
 }
 .myworks__item--barbershop {
   position:relative;   
 }
 .item-box {
+  display: none;
   position:absolute;
- background-color: black;
-  opacity: 0.9;
   left:0;
   bottom:0;
   right:0;
   top:0;
-  background:rgba(255,255,255, 0.7);
   padding:5px;
-  display:none;
 }
 .myworks__item--barbershop:hover .item-box {
   display:block;
+}
+.item-box:hover {
+  background:rgba(3, 13, 24, 0.97);
+  transition: 0.2s;
+}
+.item-box__title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+}
+.item-box__text {
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: left;
+}
+.item-box__link {
+  display: flex;
+  justify-content: space-around;
+}
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 35px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    background-color: #000000;
+    border: 1px #030d18 solid;
+    border-radius: 100px;
+}
+.button:hover,
+.button:focus,
+.button:active {
+    border: 1px white solid;
+}
+.button--view {
+  background-image: url("../img/eye.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+}
+.button--view span {
+  margin-left: 15px;
+}
+.button--git {
+  background-image: url("../img/github.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+}
+.button--git span {
+  margin-left: 15px;
 }

@@ -1,0 +1,27 @@
+.skills {
+	  background-color:  rgba(3, 13, 24, 0.2);
+} 
+.skills__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skills__item {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.skills__image {
+	margin-bottom: 10px;
+}
+@media only screen and (min-width: 1170px) {
+.skills__list {
+  width: 1100px;
+  margin: 0 auto;
+}
+.skills__item {
+  margin-bottom: 60px;
+}
+
+}
