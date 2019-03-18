@@ -46,36 +46,3 @@ jQuery(document).ready(function($){
 		if($(event.target).is('.main-nav')) $(this).children('ul').toggleClass('is-visible');
 	});
 });			// при клике открывает меню на мобильном
-
-$(document).ready(function(){
-    $(".header-start").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});            // плавный переход по якорю (header-start)
-
-(function($) {  
-$(function() {  
-  $('#up').click(function() {  
-    $('body,html').animate({scrollTop:0},500);  
-    return false;  
-  })   
-})  
-})(jQuery) // скролл вверх по стрелке
-
-var $win = $(window),
-    $fixed = $(".back-top"),
-    limit = 500;
-function tgl (state) {
-    $fixed.toggleClass("hidden", state);
-}
-$win.on("scroll", function () {
-    var top = $win.scrollTop();
-    if (top < limit) {
-        tgl(true);
-    } else {
-        tgl(false);
-    }
-});  // показывать стрелку только если скролл ниже 200px

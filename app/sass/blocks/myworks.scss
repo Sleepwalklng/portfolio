@@ -7,25 +7,15 @@
   text-align: center;
   margin-bottom: 20px;
   color: #030d18;
-}
-@media only screen and (min-width: 1170px) {
-  .cd-section {
-  padding-top: 65px;
-  }
-  .cd-section h2 {
-    font-size: 36px;
-  }
-}
-.section__line {
-    display: block;
-    margin-bottom: 25px;
-    padding: 20px;
-    background-image: url('../img/coding.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+  background:rgba(3, 13, 24, 0.2);
+  padding-top: 15px;
+  padding-bottom: 15px;
+
 }
 .myworks {
-  background-color:  rgba(3, 13, 24, 0.1);
+ background-image: url("../img/pattern-light.png");
+ background-position: 0 0;
+ background-repeat: repeat;
 }
 .myworks__list {
   display: flex;
@@ -34,24 +24,7 @@
 }
 .myworks__item {
   margin-bottom: 40px;
-}
-@media only screen and (min-width: 1170px) {
-.myworks__list {
-  width: 1100px;
-  margin: 0 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.myworks__item {
-  margin-bottom: 60px;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-  width: 500px;
-  height: 269px;
-}
-}
-.myworks__item--barbershop {
-  position:relative;   
+  position:relative; 
 }
 .item-box {
   display: none;
@@ -61,26 +34,32 @@
   right:0;
   top:0;
   padding:5px;
+  animation: fade .5s linear forwards;
 }
-.myworks__item--barbershop:hover .item-box {
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.myworks__item:hover .item-box {
   display:block;
-}
-.item-box:hover {
-  background:rgba(3, 13, 24, 0.97);
-  transition: 0.2s;
+  background:rgba(3, 13, 24, 0.8);
 }
 .item-box__title {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 26px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
   color: #ffffff;
   text-align: center;
 }
 .item-box__text {
-  padding-bottom: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
   color: #ffffff;
   text-align: left;
 }
@@ -107,7 +86,7 @@
 .button--view {
   background-image: url("../img/eye.svg");
   background-repeat: no-repeat;
-  background-position: 10px 6px;
+  background-position: 15px 15px;
 }
 .button--view span {
   margin-left: 15px;
@@ -115,8 +94,64 @@
 .button--git {
   background-image: url("../img/github.svg");
   background-repeat: no-repeat;
-  background-position: 8px 5px;
+  background-position: 15px 13px;
 }
 .button--git span {
   margin-left: 15px;
+}
+@media (min-width: 391px) {
+  .item-box__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 26px;
+}
+.item-box__text {
+  line-height: 26px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px;
+}
+  .button--view {
+  background-position: 8px 7px;
+}
+.button--git {
+  background-position: 8px 6px;
+}
+}
+@media (min-width: 1170px) {
+  .cd-section {
+  padding-top: 65px;
+  }
+  .cd-section h2 {
+    font-size: 36px;
+  }
+.myworks__list {
+  width: 1100px;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.myworks__item {
+  margin-bottom: 60px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  width: 500px;
+  height: 269px;
+}
+ .item-box__title {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 26px;
+}
+.item-box:hover {
+  background:rgba(3, 13, 24, 0.95);
+}
+
+.button--view {
+  background-position: 10px 6px;
+}
+.button--git {
+  background-position: 8px 6px;
+}
 }

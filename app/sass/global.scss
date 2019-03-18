@@ -1,7 +1,6 @@
-body {
+body, html {
   font-family: "montserrat",sans-serif;
   box-sizing: border-box;
-  font: initial;
 }
 img {
   max-width: 100%;
@@ -11,25 +10,11 @@ img {
   min-width: 320px;
   margin: 0 auto;
 }
-.back-top {
-  display: none;
-}
-@media only screen and (min-width: 1170px) {
-  #back-top {
-  position: fixed;
-  right: 2%;
-  bottom: 2%;
-  z-index: 10;
-}
-#back-top a {
-  width: 77px;
-  height: 70px;
-  display: block;
-  text-decoration: none;
-  transition: all linear 0.2s;
-  text-align: center;
-}
-.back-top.hidden {
-  display: none;
-}
+.section__line {
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-image: url('../img/coding.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }

@@ -1,0 +1,69 @@
+.social-link {
+  display: inline-block;
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 101px;
+
+  font-size: 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #3e3e3e;
+  outline: none;
+
+  transition: border-color 0.3s linear, background-color 0.3s linear, opacity 0.3s linear;
+  &--vk {
+    width: 107px;
+
+    background-image: url(../img/vk.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &--gh {
+    width: 104px;
+    margin-right: -1px;
+    margin-left: -1px;
+
+    background-image: url(../img/github.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &--ha {
+    width: 109px;
+
+    background-image: url(../img/htmlacademy.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &:hover,
+  &:focus {
+    border-color: #515151;
+  }
+  &:active {
+    background-color: #252525;
+    border-color: #252525;
+    opacity: 0.3;
+  }
+}
+
+
+@media only screen and (min-width: 1170px) {
+  .social-link {
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+
+    border: 1px solid #3e3e3e;
+    &:last-child {
+      margin-right: 0;
+    }
+    &--gh {
+      margin-left: 0;
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}

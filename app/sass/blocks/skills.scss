@@ -1,13 +1,15 @@
 .skills {
-	  background-color:  rgba(3, 13, 24, 0.2);
+ background-image: url("../img/pattern-light.png");
+ background-position: 0 0;
+ background-repeat: repeat;
 } 
 .skills__list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+ display: flex;
+ justify-content: space-around;
+ flex-direction: column;
 }
 .skills__item {
-  width: 150px;
+  width: 190px;
   height: 150px;
   text-align: center;
   margin-bottom: 40px;
@@ -17,11 +19,15 @@
 }
 @media only screen and (min-width: 1170px) {
 .skills__list {
+	flex-direction: row;
   width: 1100px;
   margin: 0 auto;
 }
 .skills__item {
   margin-bottom: 60px;
 }
-
+}
+.skills__wrapper {
+	display: flex;
+	justify-content: space-around;
 }

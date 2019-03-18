@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Title</title>
+ 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
 
@@ -14,28 +15,27 @@
         <div id="main-nav__intro"></div> 
         <a href="#0" class="main-nav__toggle"><span></span></a>
           <ul>
-            <li><a href="#yak1"><b>Мои работы</b></a></li>
-            <li><a href="#yak2"><b>Навыки</b></a></li>
-            <li><a href="#yak2"><b>Навыки</b></a></li>
-            <li><a href="#yak2"><b>Навыки</b></a></li>
+            <li><a class="active" href="#yak1"><b>Резюме</b></a></li>
+            <li><a href="#yak2"><b>Мои работы</b></a></li>
+            <li><a href="#yak3"><b>Навыки</b></a></li>
+            <li><a href="#yak4"><b>Контакты</b></a></li>
           </ul>
         </nav>
       
-    <header class="page-header">
+    <header class="page-header cd-section" id="yak1">
       <div class="header-block">
         <h1>Портфолио</h1>
         <img src="img/foto.jpg" width="100px" alt="Фото" class="header__foto">
         <div class="block__info">
-          <h3 class="header__name">Роман Пачковский</h3>
+          <h3 class="header__name">Роман Пачковский<br>Frontend-developer</h3>
           <p class="header__text">Проживаю: г. Глубокое, Беларусь<br>Возраст: 21 год<br>Образование: неоконченное высшее</p>
-          <a class="button--header" href="#">Резюме</a>
+          <a class="button--header" href="https://hh.ru/resume/eb63821eff051f05aa0039ed1f39446159466e">Резюме</a>
         </div>
       </div>
     </header>
-
     
     <main class="container">
-        <section class="myworks cd-section" id="yak1">
+        <section class="myworks cd-section" id="yak2">
           <h2>Мои работы</h2>
           <div class="section__line"></div>
           <ul class="myworks__list">
@@ -51,7 +51,18 @@
                 </div>
               </li>
             
-            <li class="myworks__item"><a href="#"><img src="img/bootstrap3-basic-s.jpg"  width="500px" height="300px" alt="Барбершоп"></a></li>
+             <li class="myworks__item myworks__item--barbershop">
+                <img src="img/bootstrap3-basic-s.jpg" width="500px" height="260px" alt="Барбершоп"></a>
+                 <div class="item-box">
+                    <h3 class="item-box__title">Барбершоп "Бородинский"</h3>
+                    <p class="item-box__text">Адаптивная вёрстка учебного макета Barbershop Borodinski</p>
+                   <div class="item-box__link">
+                      <a href="" class="button button--view"><span>Открыть демо</span></a>
+                     <a href="" class="button button--git"><span>Смотреть код</span></a>
+                   </div>
+                </div>
+              </li>
+              
             <li class="myworks__item"><a href="#"><img src="img/pink-s.jpg"  width="500px" height="300px" alt="Барбершоп"></a></li>
             <li class="myworks__item"><a href="#"><img src="img/sedona-s.jpg" width="500px" height="300px" alt="Барбершоп"></a></li>
             <li class="myworks__item"><a href="#"><img src="img/barbershop2-s.jpg"  width="500px" height="300px" alt="Барбершоп"></a></li>
@@ -60,45 +71,82 @@
           
         </section> 
     
-        <section class="skills cd-section" id="yak2">
+        <section class="skills cd-section" id="yak3">
           <h2>Навыки</h2>
           <div class="section__line"></div>
          <ul class="skills__list">
-           <li class="skills__item">
-             <div class="skills__image"><img src="img/skills/html5.svg" width="50px" alt="HTML5"></div>
-             <h3 class="skills__title">HTML5</h3>
-           </li>
-           <li class="skills__item">
-             <div class="skills__image"><img src="img/skills/css3.svg" width="50px" alt="CCS3"></div>
-             <h3 class="skills__title">CSS3</h3>
-           </li>
-           <li class="skills__item">
-             <div class="skills__image"><img src="img/skills/js.svg" width="50px" alt="JS"></div>
-             <h3 class="skills__title">JS</h3>
-           </li>
-           <li class="skills__item">
-             <div class="skills__image"><img src="img/skills/jquery.svg" width="50px" alt="Jquery"></div>
-             <h3 class="skills__title">Jquery</h3>
-           </li>
-           <li class="skills__item">
-             <div class="skills__image"><img src="img/skills/gulp.svg" width="50px" alt="Gulp"></div>
-             <h3 class="skills__title">Gulp</h3>
-           </li>
-           <li class="skills__item">
-             <div class="skills__image"><img src="img/skills/sass.svg" width="50px" alt="Sass"></div>
-             <h3 class="skills__title">Sass</h3>
-           </li>
+           <div class="skills__wrapper">
+             <li class="skills__item">
+               <div class="skills__image"><img src="img/skills/html5.svg" width="50px" alt="HTML5"></div>
+               <h3 class="skills__title">HTML5</h3>
+             </li>
+             <li class="skills__item">
+               <div class="skills__image"><img src="img/skills/css3.svg" width="50px" alt="CCS3"></div>
+               <h3 class="skills__title">CSS3</h3>
+             </li>
+             <li class="skills__item">
+               <div class="skills__image"><img src="img/skills/js.svg" width="50px" alt="JS"></div>
+               <h3 class="skills__title">JS</h3>
+             </li>
+           </div>
+           <div class="skills__wrapper">
+             <li class="skills__item">
+               <div class="skills__image"><img src="img/skills/jquery.svg" width="50px" alt="Jquery"></div>
+               <h3 class="skills__title">Jquery</h3>
+             </li>
+             <li class="skills__item">
+               <div class="skills__image"><img src="img/skills/gulp.svg" width="50px" alt="Gulp"></div>
+               <h3 class="skills__title">Gulp</h3>
+             </li>
+             <li class="skills__item">
+               <div class="skills__image"><img src="img/skills/sass.svg" width="50px" alt="Sass"></div>
+               <h3 class="skills__title">Sass</h3>
+             </li>
+           </div>
          </ul>
         </section> 
 
-    
-    
+    <section class="contacts cd-section" id="yak4">
+      <h2>Контакты</h2>
+      <div class="section__line"></div>
+      <div class="contacts__wrapper">
+        <p class="contacts__desc">Напишите мне сообщение<br> и я отвечу в самые короткие сроки</p>
+    <form action="https://echo.htmlacademy.ru" class="login-form" method="POST">
+        <p>
+            <label for="user-name">Имя</label>
+            <input id="user-name" type="text" name="name">
+        </p>
+        <p>
+            <label for="user-email" class="visually-hidden">E-mail</label>
+            <input type="email" id="user-email" name="email">
+        </p>
+        <p>
+          <label for="message">Сообщение</label>
+          <textarea id="message"></textarea>
+        </p>
+        <button class="button button__contact" type="submit">Отправить</button>
+        </form>   
+      </div>
+    </section>
+
+    <footer class="page-footer">
+       <div class="page-footer__wrapper">
+        <p class="page-footer__contacts">
+          <b>Портфолио</b><br>
+          Роман Пачковский<br>
+          <a class="btn" href="tel:+375295159682"><span class="page-footer__phone-show"></span> +375 (29) 515-96-82</a>
+        </p>
+         <p class="page-footer__social">
+          <span class="page-footer__social-title">Контакты</span>
+          <span class="social-links">
+            <a class="social-link  social-link--vk" href="https://vk.com/roman_pachkovski"></a>
+            <a class="social-link  social-link--gh" href="https://github.com/Sleepwalklng"></a>
+            <a class="social-link  social-link--ha" href="https://htmlacademy.ru/profile/id360097"></a>
+          </span>
+        </p>
+      </div>
+    </footer>
   
-
-    <div class="back-top hidden" id="back-top">
-      <a href="#" id="up"><img src="img/uparrow.svg" width="30px" height="30px" alt="Стрелка"></a>  
-    </div>
-
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script> 
 
