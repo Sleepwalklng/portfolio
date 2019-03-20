@@ -23,6 +23,8 @@
   transition: transform 0.3s, visibility 0s 0s;
 }
 .main-nav li a {
+  text-decoration: none;
+  text-align: center;
   display: block;
   padding: 1.6em;
   border-bottom: 1px solid #092645;
@@ -79,6 +81,7 @@
   }
 }
 .main-nav__toggle {
+  text-decoration: none;
   position: fixed;
   top: 5%;
   right: 5%;
