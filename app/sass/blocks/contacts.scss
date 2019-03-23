@@ -72,12 +72,13 @@ textarea:-moz-placeholder{
 }
 .button__contact {
 	margin-left: 55px;
+	background: #030d18;
 }
 .button__contact:hover {
 	cursor: pointer;
-	background: #F7F7F7;
-	color: black;
+	background: #F9F9F9;
 	border: 1px solid black;
+	color: black;
 	transition: 0.4s;
 }
 

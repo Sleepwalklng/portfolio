@@ -329,7 +329,8 @@ img {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  list-style: none; }
 
 .skills__item {
   width: 190px;
@@ -522,13 +523,14 @@ textarea:-moz-placeholder {
   font-style: italic; }
 
 .button__contact {
-  margin-left: 55px; }
+  margin-left: 55px;
+  background: #030d18; }
 
 .button__contact:hover {
   cursor: pointer;
-  background: #F7F7F7;
-  color: black;
+  background: #F9F9F9;
   border: 1px solid black;
+  color: black;
   -webkit-transition: 0.4s;
   transition: 0.4s; }
 
